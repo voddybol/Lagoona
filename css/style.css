@@ -335,10 +335,6 @@ header {
     padding-bottom: 15px;
 }
 
-
-
-
-
 /* Преимущества */
 
 .section-benefits {
@@ -375,6 +371,10 @@ header {
 
 .section-accommodation {
     margin-top: 70px;
+}
+
+.section-accomodation-heading {
+    margin-bottom: 20px;
 }
 
 .section-accomodation-offer {
@@ -457,8 +457,277 @@ header {
 }
 
 /* Хочу тур */
+.section-tour {
+    margin-top: 70px;
+}
 
+.section-heading-tour {
+    margin: 0;
+}
+
+.section-tour-form {
+    padding: 45px;
+    background: #cccccc;
+    border-radius: 15px;
+}
+
+.tour-form {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.tour-form-list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tour-form-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 16px;
+    justify-content: center;
+}
+
+.tour-form-item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.tour-form-btn {
+    padding: 13px 30px;
+    border: 1px solid #CC9933;
+    color: #CC9933;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+}
+
+.tour-form-btn:hover {
+    color: #fff;
+    background-color: #CC9933;
+}
 
 
 /* Контакты */
 
+.section-contacts {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.section-heading-tour {
+    margin-bottom: 20px;
+}
+
+.section-contact-form {
+    display: flex;
+    background-color: #fff;
+    padding: 45px;
+    border-radius: 1rem;
+}
+
+.section-contact-form-left {
+    margin-right: 52px;
+    flex: 0 0 33.33%;
+}
+
+.section-contact-item-adress {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 23px;
+    margin-right: 27px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.section-contact-item-phone {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    margin-right: 27px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.section-contact-item-mail {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.mails {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.section-contact-item-schedule {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    margin-right: 27px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.section-contact-item-heading {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.section-contact-item-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: auto;
+    max-width: 195px;
+    color: #000;
+    flex: 0 0 60%;
+}
+
+.section-contact-mail-description {
+    display: flex;
+    margin-left: 0px;
+}
+
+.section-contact-form-right {
+    background-image: url(../img/Lagoona_reception.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    flex: 0 1 66.66%;
+    border-radius: 1rem;
+}
+
+.section-contact-mail-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999;
+}
+
+.mail-link,
+.phone-link {
+    color: #CC9933;
+}
+
+.section-contact-btn {
+    padding: 27px 30px;
+    border: 1px solid #CC9933;
+    border-radius: 15px;
+    transition: 0.3s all ease;
+    line-height: 1;
+    max-width: 220px;
+    text-align: center;
+    color: #CC9933;
+    
+}
+
+.section-contact-btn:hover {
+    color: #fff;
+    background-color: #CC9933;
+}
+
+.footer-container {
+    display: flex;
+    background-color: #333;
+    padding: 45px;
+    border-radius: 15px;
+}
+
+.footer-copyright {
+    font-size: 16px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #fff;
+    flex: 0 0 29%
+}
+
+.footer-copyright-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-copyright-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+
+.footer-copyright-link {
+    color: #CC9933;
+}
+
+.footer-contacts{
+    flex: 0 0 45%;
+}
+
+.footer-contacts-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.footer-contacts-item {
+    margin-left: 125px;
+    font-style: normal;
+}
+
+.footer-contacts-adress {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-contacts-phone {
+    color: #CC9933;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-contacts-mail {
+    color: #CC9933;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-img {
+    position: relative;
+    top: 83px;
+    right: 80px;
+}
+
+.footer-icon-list {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-icon-item {
+    margin-bottom: 20px;
+}
