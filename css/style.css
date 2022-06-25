@@ -459,10 +459,11 @@ header {
 /* Хочу тур */
 .section-tour {
     margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .section-heading-tour {
-    margin: 0;
+    color: #000;
 }
 
 .section-tour-form {
@@ -471,83 +472,53 @@ header {
     border-radius: 15px;
 }
 
-.tour-form {
+.form {
+    display: flex;
+    padding: 31px 28px;
     background-color: #fff;
-    padding: 20px 40px;
     border-radius: 15px;
-    margin: 0;
 }
 
-.tour-form-list {
+.form-list {
     display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
 }
 
-select {
-    margin-top: 15px;
-    border: none;
-    font-family: Muller;
+.form-item {
+    margin-right: 15px;
+}
+
+.form-item-name {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+.input {
+    border: 0;
+    border-bottom: 1px solid #E9E9E9;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-
+    max-width: 170px;
 }
 
-.calendar {
-    margin-top: 15px;
-    border: none;
-}
-
-.tour-form-item {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 16px;
-    font-size: 12px;
-    line-height: 12px;
-}
-
-.tour-form-item-heading {
-    margin: 0px 0px 0px 3.5px;
-}
-
-.calendar {
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-.tour-form-item:not(:last-child) {
-    margin-right: 80px;
-}
-
-.tour-form-btn {
+.btn-submit {
+    align-self: center;
     padding: 13px 30px;
+    margin-left: 35px;
     border: 1px solid #CC9933;
     border-radius: 10px;
+    background-color: #fff;
+    color: #CC9933;
     transition: 0.3s all ease;
-    font-family: Muller;
+    font-family: 'Muller';
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #CC9933;
-
 }
 
-.tour-form-btn:hover {
+.btn-submit:hover {
     color: #fff;
     background-color: #CC9933;
 }
-
 
 /* Контакты */
 
@@ -757,10 +728,15 @@ select {
     right: 80px;
 }
 
+.footer-link {
+    justify-content: flex-end;
+}
+
 .footer-icon-list {
     display: flex;
     flex-direction: column;
     color: #fff;
+    margin-left: 256px;
     margin-top: 0;
     padding-left: 0;
     list-style: none;

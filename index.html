@@ -247,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tour">
+        <!-- <section class="section-tour">
             <div class="container">
                 <div class="section-tour-form">
                     <h2 class="section-heading section-heading-tour">Хочу тур</h2>
@@ -359,6 +359,38 @@
                     </div>
                     <div class="section-contact-form-right"></div>
                     </div>
+            </div>
+        </section> -->
+        <section class="section-tour">
+            <div class="container">
+                <div class="section-tour-form">
+                    <h2 class="section-heading section-heading-tour">Хочу тур</h2>
+                    <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="form">
+                        <div class="form-list">
+                            <div class="form-item">
+                                <p class="form-item-name">Город вылета</p>
+                                <input type="text" name="city" class="input" id="city">
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-name">Страна</p>
+                                <input type="text" name="tour-country" class="input">
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-name">Дата прибытия</p>
+                                <input type="date" name="date" class="input">
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-name">Ночей</p>
+                                <input type="number" name="Ночей" class="input">
+                            </div>
+                            <div class="form-item">
+                                <p class="form-item-name">Туристы</p>
+                                <input type="number" name="Туристы" class="input">
+                            </div>
+                        </div>
+                        <button class="btn btn-submit">Найти</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
