@@ -29,50 +29,51 @@ header {
     width: 1170px;
 }
 
-.header-infobar {
+.header__infobar {
     display: flex;
 }
 
-.header-left {
+.header__left {
     display: flex;
     margin-right: auto;
     align-items: center;
 }
 
-.mphone {
+.header__phone {
     margin-left: 40px;
     color: #666;
     transition: 0.2s all ease;
 }
 
-.mphone:hover {
+.header__phone:hover {
     color: #CC9933;
 }
 
-.header-right {
+.header__right {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-.personal {
+.header__account {
     display: flex;
     color: #CC9933;
     align-items: center;
-    transition: 0.3s all ease;
+    transition: 0.3s color ease;
 }
 
-.personal:hover {
+.header__account:hover {
     color: rgba(233, 196, 121, 1);
 }
 
-.backspace-icon {
+.header__backspace-icon {
     fill: #CC9933;
     margin-right: 7px;
     transform: translateY(-2px);
+    transition: 0.3s color ease-in-out;
 }
 
-.backspace-icon:hover {
+.header__backspace-icon:hover {
     fill: rgba(233, 196, 121, 1);
 }
 
@@ -87,11 +88,11 @@ header {
     margin-top: 30px;
 }
 
-.navbar-list {
+.nav__list {
     display: flex;
 }
 
-.navbar-item {
+.nav__item {
     display: flex;
     font-size: 16px;
     line-height: 16px;
@@ -99,25 +100,25 @@ header {
     padding: 14px 0px 14px 0px;
 }
 
-.navbar-link {
+.nav__link {
     color: #666;
     transition: 0.2s all ease;
 }
 
-.navbar-link:hover {
+.nav__link:hover {
     color: #CC9933;
 }
 
-.navbar-item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 45px;
 }
 
-.navbar-right {
+.nav__right {
     display: flex;
     border-left: 1px solid #e1e1e1;
 }
 
-.navbar-tour-btn {
+.nav__btn {
     border: 1px solid #CC9933;
     padding: 13px 20px;
     border-radius: 10px;
@@ -126,12 +127,12 @@ header {
     transition: 0.3s all ease;
 }
 
-.navbar-tour-btn:not(:last-child) {
+.nav__btn:not(:last-child) {
     margin-right: 40px;
     margin-left: 57px;
 }
 
-.navbar-tour-btn:hover {
+.nav__btn:hover {
     color: #fff;
     background-color: #CC9933;
 }
