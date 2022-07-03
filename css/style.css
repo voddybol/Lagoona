@@ -40,7 +40,7 @@ header {
 }
 
 .header__phone {
-  transition: 0.2s all ease;
+  transition: color .2s ease;
   margin-left: 40px;
   color: #666;
 }
@@ -58,7 +58,7 @@ header {
 .header__account {
   display: flex;
   align-items: center;
-  transition: 0.3s color ease;
+  transition: color .1s ease-in-out;
   color: #CC9933;
 }
 
@@ -66,15 +66,15 @@ header {
   color: rgba(233, 196, 121, 1);
 }
 
+.header__account:hover .header__backspace-icon path {
+  fill: rgba(233, 196, 121, 1);
+}
+
 .header__backspace-icon {
-  transition: 0.3s color ease-in-out;
+  transition: color .1s  ease-in-out;
   transform: translateY(-2px);
   margin-right: 7px;
   fill: #CC9933;
-}
-
-.header__backspace-icon:hover {
-  fill: rgba(233, 196, 121, 1);
 }
 
 /* Навигация */
@@ -101,7 +101,7 @@ header {
 }
 
 .nav__link {
-  transition: 0.2s all ease;
+  transition: color .2s ease;
   color: #666;
 }
 
@@ -119,12 +119,14 @@ header {
 }
 
 .nav__btn {
-  transition: 0.3s all ease;
   border: 1px solid #CC9933;
   margin-right: 45px;
   padding: 13px 20px;
   border-radius: 10px;
   color: #CC9933;
+  transition-property: background-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 .nav__btn:not(:last-child) {
@@ -442,7 +444,7 @@ header {
   border: 1px solid rgba(204, 153, 51, 1);
   border-radius: 10px;
   color: rgba(204, 153, 51, 1);
-  transition: 0.3s all ease;
+  transition: background-color .3s ease;
 }
 
 .section-accommodation__btn:hover {
@@ -529,7 +531,7 @@ header {
   border-radius: 10px;
   background-color: #fff;
   color: #CC9933;
-  transition: 0.3s all ease;
+  transition: background-color .3s ease;
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -604,7 +606,7 @@ header {
   line-height: 16px;
   border: 1px solid #CC9933;
   border-radius: 15px;
-  transition: 0.3s all ease;
+  transition: background-color .3s ease;
   text-align: center;
   color: #CC9933;
 }
@@ -724,3 +726,8 @@ header {
 .footer-icon-item {
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+
+}
+
